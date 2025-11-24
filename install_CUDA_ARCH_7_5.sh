@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Local variables
-PROJECT_NAME=spt
+PROJECT_NAME=spt_lazzz
 PYTHON=3.8
 TORCH=2.2.0
 CUDA_SUPPORTED=(11.8 12.1)
@@ -114,6 +114,8 @@ pip install wandb
 pip install open3d
 pip install gdown
 pip install ipyfilechooser
+pip install laspy[laszip]
+pip install pyproj
 
 echo
 echo

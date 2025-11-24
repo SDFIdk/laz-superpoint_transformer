@@ -110,6 +110,9 @@ pip install wandb
 pip install open3d
 pip install gdown
 pip install ipyfilechooser
+pip install laspy[laszip]
+pip install pyproj
+
 
 echo
 echo
