@@ -58,13 +58,12 @@ named `spt`.
 ### Prediction
 Given a folder with .laz files you can classify all points in the laz files with 
 ```bash
-python python predict_many.py --inputlaz path/to/(folder or las.laz) --output_folder path/to/outputfolder --ckpt_path path/to/checkpoints/a_file.ckpt
+python python predict_many.py --inputlaz path/to/(folder or las.laz) --output_folder path/to/outputfolder --ckpt_path path/to/checkpoints/a_file.ckpt --config path/to/config
 ```
 
 To classify the example dataset with a pretrained model do the following 
-
-python download_model.py
-python predict_many.py --inputlaz /mnt/T/mnt/trainingdata/bygningsudpegning/hf_strandbo_1km2/laz/1km_6173_728.laz --output_folder /mnt/T/mnt/trainingdata/bygningsudpegning/hf_strandbo_1km2/predi>
+```bash
+python predict_many.py --inputlaz data/toy_laz_dataset/raw/test/ --ckpt_path models/example.ckpt --output_folder outputfolder/ --config experiment=semantic/vox025kds
 
 
 ### Training
