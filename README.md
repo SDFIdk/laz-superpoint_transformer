@@ -64,16 +64,15 @@ python python predict_many.py --inputlaz path/to/(folder or las.laz) --output_fo
 To classify the example dataset with a pretrained model do the following 
 ```bash
 python predict_many.py --inputlaz data/toy_laz_dataset/raw/test/ --ckpt_path models/example.ckpt --output_folder outputfolder/ --config experiment=semantic/vox025kds
-
+```
 
 ### Training
 
-Some examples:
 
 ```bash
 # Train SPT on the toy_laz_dataset that comes with the repo
 python src/train.py experiment=semantic/vox025toy_laz_dataset.yaml
-
+```
 
 ### CUDA Out-Of-Memory Errors
 Having some CUDA OOM errors 💀💾 ? Here are some parameters you can play 
